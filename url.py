@@ -1,4 +1,4 @@
-URLS = {"01.03.02 ИИИ": {
+URLS = {"01.03.02": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748193468849593654",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748193468848545078",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630094493719862",
@@ -6,7 +6,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630094494768438",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748193468851690806",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205380643593526"},
-        "01.03.04 ИИТ": {
+        "01.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205377727503670",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630352647888182",
@@ -14,7 +14,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630352648936758",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205377729600822",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205374469578038"},
-        "01.03.05 ИТУ": {
+        "01.03.05": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205371509447990",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630502644587830",
@@ -22,7 +22,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630502645636406",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205371511545142",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205371511545142"},
-        "02.03.02 ИКБ": {
+        "02.03.02": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205364832116022",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630626071420214",
@@ -30,7 +30,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766630626072468790",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205364834213174",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205361247034678"},
-        "03.03.02 ИИИ": {
+        "03.03.02": {
             "general competition": "-",
             "BVI": "-",
             "special rights": "-",
@@ -38,7 +38,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "-",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1764954821715041590",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205355014298934"},
-        "04.03.01 ИТХТ": {
+        "04.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205351209016630",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205351207968054",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766632194100436278",
@@ -46,7 +46,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766632194101484854",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205351211113782",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205348077968694"},
-        "05.03.03 ИРИ": {
+        "05.03.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205344227597622",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205344226549046",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766632381903543606",
@@ -102,7 +102,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766701662382071094",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205436695223606",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205431899036982"},
-        "09.03.03 ИИТ": {
+        "09.03.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205428624334134",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205428623285558",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637071862078774",
@@ -110,7 +110,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637071863127350",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205428626431286",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205425871822134"},
-        "09.03.04 ИИТ": {
+        "09.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205422769085750",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205422768037174",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638257321286966",
@@ -118,7 +118,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638257322335542",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205422771182902",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205419642232118"},
-        "10.03.01 ИКБ": {
+        "10.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205535757344054",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205535756295478",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639559601298742",
@@ -126,7 +126,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639559602347318",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205535759441206",
             "foreigners": "-"},
-        "10.05.01 ИИИ": {
+        "10.05.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205531612323126",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205531611274550",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639849842941238",
@@ -134,7 +134,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639849843989814",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205531614420278",
             "foreigners": "-"},
-        "10.05.02 ИИИ": {
+        "10.05.02": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205527259684150",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766640775545756982",
@@ -142,7 +142,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766640775546805558",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205527261781302",
             "foreigners": "-"},
-        "10.05.03 ИКБ": {
+        "10.05.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205522704670006",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641061584706870",
@@ -150,7 +150,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641061585755446",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205522706767158",
             "foreigners": "-"},
-        "10.05.04 ИКБ": {
+        "10.05.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205519868271926",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641254575119670",
@@ -158,7 +158,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641254576168246",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205519870369078",
             "foreigners": "-"},
-        "10.05.05 ИКБ": {
+        "10.05.05": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205515758902582",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641401686138166",
@@ -166,7 +166,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641401687186742",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205515760999734",
             "foreigners": "-"},
-        "11.03.01 ИРИ": {
+        "11.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205512494685494",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642017786404150",
@@ -174,7 +174,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642017787452726",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205512496782646",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205509582789942"},
-        "11.03.02 ИРИ": {
+        "11.03.02": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205505111661878",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642439391550774",
@@ -182,7 +182,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642439392599350",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205505113759030",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205502108540214"},
-        "11.03.03 ИРИ": {
+        "11.03.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205498687036726",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642916753677622",
@@ -190,7 +190,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642916754726198",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205498689133878",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205495465811254"},
-        "11.03.04 ИПТИП": {
+        "11.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205492169088310",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766643285419367734",
@@ -198,7 +198,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766643285420416310",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205492171185462",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205489644117302"},
-        "11.05.01 ИРИ": {
+        "11.05.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205486659870006",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642963758193974",
@@ -206,7 +206,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642963759242550",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205486661967158",
             "foreigners": "-"},
-        "12.03.01 ИКБ": {
+        "12.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205604742110518",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642279581228342",
@@ -214,7 +214,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766642279582276918",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205604744207670",
             "foreigners": "-"},
-        "12.03.04 ИИИ": {
+        "12.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205598518811958",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641903628983606",
@@ -222,7 +222,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641903630032182",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205598520909110",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205595044879670"},
-        "12.03.05 ИПТИП": {
+        "12.03.05": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205591555218742",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205591554170166",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641785203858742",
@@ -230,7 +230,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641785204907318",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205591557315894",
             "foreigners": "-"},
-        "12.05.01 ИПТИП": {
+        "12.05.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205585424194870",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641536606412086",
@@ -238,7 +238,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766641536607460662",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205585426292022",
             "foreigners": "-"},
-        "15.03.01 ИПТИП": {
+        "15.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205581416537398",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205581415488822",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766640957531364662",
@@ -246,7 +246,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766640957532413238",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205581418634550",
             "foreigners": "-"},
-        "15.03.04 ИИИ": {
+        "15.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205574846160182",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639291028479286",
@@ -254,7 +254,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766639291029527862",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205574848257334",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205571465551158"},
-        "15.03.06 ИИИ": {
+        "15.03.06": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205567742057782",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205567741009206",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638921539657014",
@@ -262,7 +262,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638921540705590",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205567744154934",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205564771441974"},
-        "18.03.01 ИТХТ": {
+        "18.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205560341208374",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638703451577654",
@@ -270,7 +270,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638703452626230",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205560343305526",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205556736204086"},
-        "19.03.01 ИТХТ": {
+        "19.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205685050449206",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205685049400630",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638174349565238",
@@ -278,7 +278,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638174350613814",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205685052546358",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205681197980982"},
-        "20.03.01 ИТХТ": {
+        "20.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205677892869430",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638029551705398",
@@ -286,7 +286,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766638029552753974",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205677894966582",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205674767064374"},
-        "22.03.01 ИПТИП": {
+        "22.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205671651745078",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637890556665142",
@@ -294,7 +294,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637890557713718",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205671653842230",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205668816395574"},
-        "27.03.01 ИПТИП": {
+        "27.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205665905548598",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637642908179766",
@@ -302,7 +302,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637642909228342",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205665907645750",
             "foreigners": "-"},
-        "27.03.03 ИИИ": {
+        "27.03.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205659639258422",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205659638209846",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637102358863158",
@@ -310,7 +310,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766637102359911734",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205659641355574",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205656394964278"},
-        "27.03.05 ИТУ": {
+        "27.03.05": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205653593169206",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205653592120630",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636785708834102",
@@ -318,7 +318,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636785709882678",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205653595266358",
             "foreigners": "-"},
-        "28.03.01 ИПТИП": {
+        "28.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205647265013046",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636622646877494",
@@ -326,7 +326,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636622647926070",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205647267110198",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205643088534838"},
-        "29.03.04 ИПТИП": {
+        "29.03.04": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205626934172982",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636432728792374",
@@ -334,7 +334,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766636432729840950",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205626936270134",
             "foreigners": "-"},
-        "38.03.01 Экономика (ИТУ)": {
+        "38.03.01": {
             "general competition": "-",
             "BVI": "-",
             "special rights": "-",
@@ -342,7 +342,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "-",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205749790580022",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205747190111542"},
-        "38.03.02 ИТУ": {
+        "38.03.02": {
             "general competition": "-",
             "BVI": "-",
             "special rights": "-",
@@ -350,7 +350,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "-",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205743833619766",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205741037067574"},
-        "38.03.03 ИТУ": {
+        "38.03.03": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205737335594294",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766705223830609206",
@@ -358,7 +358,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "-",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205737337691446",
             "foreigners": "-"},
-        "38.03.04 ИТУ": {
+        "38.03.04": {
             "general competition": "-",
             "BVI": "-",
             "special rights": "-",
@@ -366,7 +366,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "-",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205733962325302",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205731134315830"},
-        "38.03.05 ИТУ": {
+        "38.03.05": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205728456252726",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766635743322578230",
@@ -374,7 +374,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766635743323626806",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205728458349878",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205725231881526"},
-        "38.05.01 ИКБ": {
+        "38.05.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205722184719670",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766685010368142646",
@@ -382,7 +382,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766685010369191222",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205722186816822",
             "foreigners": "-"},
-        "40.03.01 ИТУ": {
+        "40.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205718460177718",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205718459129142",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766643486569798966",
@@ -390,7 +390,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766643486570847542",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205718462274870",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205715707665718"},
-        "40.05.01 ИКБ": {
+        "40.05.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205711439961398",
             "BVI": "-",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766634109013073206",
@@ -398,7 +398,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766634109014121782",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205711442058550",
             "foreigners": "-"},
-        "46.03.02 ИТУ": {
+        "46.03.02": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205707438595382",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205707437546806",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766633984547102006",
@@ -406,7 +406,7 @@ URLS = {"01.03.02 ИИИ": {
             "separate quota": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766633984548150582",
             "paid places": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205707440692534",
             "foreigners": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205768304237878"},
-        "54.03.01 ИПТИП": {
+        "54.03.01": {
             "general competition": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205764814576950",
             "BVI": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205764813528374",
             "special rights": "https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1766633750286834998",
