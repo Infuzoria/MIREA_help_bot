@@ -26,6 +26,24 @@ def parser_general_competition(url):
         title = title.replace("\xa0", " ")
         headers.append(title)
 
-    print(headers)
+    body = table.find("tbody")
 
-parser_general_competition("https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748193468849593654")
+    # Собираем информацию с каждой строки
+    for row in body.find_all("tr"):
+        temp_dict = {}
+        temp = []
+        data = row.find_all("td")
+        for inf in data:
+            text = inf.text
+            text = text.replace("\xa0", " ")
+            temp.append(text)
+
+        # Удаляем запись с баллами
+        del temp[7]
+
+        # Объединяем два списка в словарь
+        for index, inf in enumerate(headers):
+            temp_dict[inf] = temp[index]
+        main_table.append(temp_dict)
+
+    return main_table
