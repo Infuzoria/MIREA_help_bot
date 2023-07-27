@@ -2,11 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
-def parser_targeted_learning(url):
+def parser_contract(url):
     """
-    Функция собирает данные из списков на целевое обучение.
+    Функция собирает данные из списков поступающих по договору
     :param url: ссылка на список
-    :return: main_table: список списков с информацией из таблицы
+    :return: main_table: список словарей с информацией из таблицы
     """
 
     ops = webdriver.ChromeOptions()
@@ -25,7 +25,7 @@ def parser_targeted_learning(url):
     # Собираем заголовки в список
     headers = []
     for i, data in enumerate(head.find_all("td")):
-        if i == 7:
+        if i == 5:
             continue
 
         title = data.text.strip()
@@ -34,38 +34,27 @@ def parser_targeted_learning(url):
 
     body = table.find("tbody")
 
-    # Считываем строки таблицы
-    counter = 0
+    # Собираем информацию с каждой строки
     for row in body.find_all("tr"):
-        # Ищем надпись с видом ЦП
-        company_name = row.find("td", class_="tgtOrgTr")
-        if company_name:
-            if counter > 0:
-                main_table.append(temp_list)
-            temp_list = []
-            string = company_name.find("strong")
-            text = string.text
-            text = text.replace("\xa0", " ")
-            temp_list.append(text)
-            continue
-
-        # Считываем обычные строки таблицы
+        temp_dict = {}
+        temp = []
         data = row.find_all("td")
-        list_for_inf = []
         for inf in data:
-            txt = inf.text
-            txt = txt.replace("\xa0", " ")
-            list_for_inf.append(txt)
+            text = inf.text
+            text = text.replace("\xa0", " ")
+            temp.append(text)
 
         # Удаляем запись с баллами
-        del list_for_inf[7]
+        del temp[5]
 
         # Объединяем два списка в словарь
-        temp_dict = {}
         for index, inf in enumerate(headers):
-            temp_dict[inf] = list_for_inf[index]
-        temp_list.append(temp_dict)
-        counter += 1
+            temp_dict[inf] = temp[index]
+        main_table.append(temp_dict)
 
-    main_table.append(temp_list)
+    for i in main_table:
+        print(i)
+
     return main_table
+
+parser_contract("https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205368168684854")
