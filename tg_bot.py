@@ -72,6 +72,30 @@ def check_list(message):
     else:
         bot.send_message(message.chat.id, "Номер введен некорректно, попробуйте ещё раз")
 
+def get_id(message):
+    id = set(re.findall(r"\d{2}.\d{2}.\d{2}", message.text))
+
+    if len(id) == 0:
+        bot.send_message(message.chat.id, "Номер указан некорректно, попробуйте ещё раз.")
+    else:
+        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        btn1 = types.KeyboardButton("Общий конкурс")
+        btn2 = types.KeyboardButton("Без вступительных испытаний")
+        btn3 = types.KeyboardButton("Квота для особых прав")
+        btn4 = types.KeyboardButton("Целевое обучение")
+        btn5 = types.KeyboardButton("Отдельная квота")
+        btn6 = types.KeyboardButton("Платные места")
+        btn7 = types.KeyboardButton("Прием иностранцев")
+        back = types.KeyboardButton("Вернуться в главное меню")
+        markup.add(btn1, btn2)
+        markup.add(btn3, btn4)
+        markup.add(btn5, btn6)
+        markup.add(btn7, back)
+
+        bot.send_message(message.chat.id, "Укажите основание отбора. Для этого нажмите на соответствующую кнопку.", reply_markup=markup)
+        bot.register_next_step_handler(message, check_position, id)
+
+
 def check_position(message):
     if all([x.isdigit() for x in message.text]):
         number = int(message.text)
@@ -292,9 +316,8 @@ def func(message):
             bot.send_message(message.chat.id, "Вы не добавили ни одной ссылки")
 
     elif(message.text == "📍 Проверить позицию"):
-        bot.send_message(message.chat.id, "Введите порядковый номер конкурсного списка, в котором желаете проверить свою позицию."
-                                          "Для того, чтобы посмотреть список ссылок, используйте команду: 💻 Просмотр всех ссылок")
-        bot.register_next_step_handler(message, check_position)
+        bot.send_message(message.chat.id, "Введите номер интересующего направления. Пример ввода: 09.03.01.")
+        bot.register_next_step_handler(message, get_id)
 
     elif(message.text == "📑 Посмотреть список"):
         bot.send_message(message.chat.id, "Введите порядковый номер url из списка ваших добавленных ссылок. "
@@ -310,17 +333,20 @@ def func(message):
     elif (message.text == "📊 Текущий конкурс"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("⚙ Помощь")
-        btn2 = types.KeyboardButton("🔗 Добавить ссылку")
-        btn3 = types.KeyboardButton("💻 Просмотр всех ссылок")
-        btn4 = types.KeyboardButton("📍 Проверить позицию")
-        btn5 = types.KeyboardButton("📑 Посмотреть список")
+        btn2 = types.KeyboardButton("📍 Проверить позицию")
+        btn3 = types.KeyboardButton("📑 Посмотреть список")
         back = types.KeyboardButton("Вернуться в главное меню")
         markup.add(btn1, btn2)
-        markup.add(btn3, btn4)
-        markup.add(btn5, back)
+        markup.add(btn3, back)
 
         bot.send_message(message.chat.id, "Для того, чтобы подробнее узнать о функционале, "
                                           "нажмите на кнопку '*Помощь*'.", reply_markup=markup, parse_mode="Markdown")
+
+    elif (message.text == "⚙ Помощь"):
+        bot.send_message(message.chat.id, "Для того, чтобы посмотреть конкурсные списки или узнать свою позицию в рейтинге, "
+                                          "нажмите на соответствующую кнопку, введите номер направления и укажите основание отбора."
+                                          "\n\n📍 *Проверить позицию* - проверить свою позицию в списке."
+                                          "\n\n📑 *Посмотреть список* - просмотр конкурсного списка.", parse_mode="Markdown")
 
     elif (message.text == "📚 Статистика прошлых лет" or message.text == "Вернуться к выбору года"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
