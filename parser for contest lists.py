@@ -2,7 +2,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
-def parser_general_competition(url):
+def general_paser(url):
+    """
+    Функция собирает данные из списков по общему конкурсу,
+    поступающих без ВИ и с особыми правами. Для других списков
+    этот парсер не подходит, нужно использовать другие
+    :param url: ссылка на список
+    :return: main_table: список словарей с информацией из таблицы
+    """
+
     ops = webdriver.ChromeOptions()
     ops.add_argument('headless')
     driver_service = Service(executable_path="C:/chromedriver.exe")
