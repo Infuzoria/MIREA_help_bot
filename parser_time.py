@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
-def general_paser(url):
+def parser_time(url):
     """
     Функция отправляет запрос на сайт и возвращает время последнего обновления списка
     :param url: ссылка на список
