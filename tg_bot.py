@@ -2,6 +2,12 @@ from part_with_parser import parser
 import telebot
 from telebot import types
 from db import BotDB
+from url import URLS
+from parser_for_contest_lists import general_paser
+from parser_for_targeted_and_separate import parser_targeted_and_separate
+from parser_contract import parser_contract
+from parser_time import parser_time
+from parser_places import parser_places
 import re
 
 API_KEY = '6137871025:AAFUh6ZxKtSzAZYhviA-_JuYSUb-iNjrop4'
@@ -12,7 +18,7 @@ user = BotDB('accountant.db')
 
 # Добавить СНИЛС
 def add_snils(message):
-    find_snils = re.findall(r"\d{3}-\d{3}-\d{3} \d{2}", message.text)
+    find_snils = re.findall(r"\d{3}-\d{3}-\d{3}-\d{2}", message.text)
     if len(find_snils) != 0:
         check_position = BotDB.get_snils(user, message.from_user.id)
         if check_position == "NULL":
@@ -73,11 +79,12 @@ def check_list(message):
         bot.send_message(message.chat.id, "Номер введен некорректно, попробуйте ещё раз")
 
 def get_id(message):
-    id = set(re.findall(r"\d{2}.\d{2}.\d{2}", message.text))
+    id = re.findall(r"\d{2}.\d{2}.\d{2}", message.text)
 
-    if len(id) == 0:
+    if id == []:
         bot.send_message(message.chat.id, "Номер указан некорректно, попробуйте ещё раз.")
     else:
+        id = id[0]
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("Общий конкурс")
         btn2 = types.KeyboardButton("Без вступительных испытаний")
@@ -95,8 +102,57 @@ def get_id(message):
         bot.send_message(message.chat.id, "Укажите основание отбора. Для этого нажмите на соответствующую кнопку.", reply_markup=markup)
         bot.register_next_step_handler(message, check_position, id)
 
+def check_position(message, id):
+    for key, value in URLS.items():
+        if key == id:
+            for k, v in value.items():
+                if k == message.text:
+                    url = v
 
-def check_position(message):
+    if url == "-":
+        bot.send_message(message.chat.id, "К сожалению, списка по выбранному направлению нет. Убедитесь в правильности ввода.")
+        return True
+    else:
+        bot.send_message(message.chat.id, "Пару секунд, идет обработка информации")
+        snils = BotDB.get_snils(user, message.from_user.id)
+        time = parser_time(url)
+        places = parser_places(url)
+
+        if message.text == "Общий конкурс" or message.text == "Без вступительных испытаний":
+            table = general_paser(url)
+
+            for row in table:
+                if row["СНИЛС/уникальный номер"] == snils:
+                    text = f"Ваш порядковый номер: {row['№']}"
+                    if places != "-":
+                        text += f"\nВсего мест: {places}"
+                    text += f"\n{time}"
+                    text += '\n---------------------------------------------------------'
+                    text += f"\nСНИЛС/уникальный номер: {row['СНИЛС/уникальный номер']}"
+                    text += f"\nПриоритет: {row['Приоритет']}"
+                    text += f"\nВП Все: {row['ВП Все']}"
+                    text += f"\nВП по оригиналам: {row['ВП по оригиналам']}"
+                    text += f"\nНаличие подлинника: {row['Наличие подлинника']}"
+                    text += f"\nПотребность в общежитии: {row['Потребность в общежитии']}"
+                    text += f"\nСумма баллов за ВИ: {row['Сумма баллов за ВИ']}"
+                    text += f"\nБалл за ИД: {row['Балл за ИД']}"
+                    text += f"\nСумма баллов: {row['Сумма баллов']}"
+                    if message.text == "Общий конкурс":
+                        text += f"\nУчастие в грантовой программе: {row['Участие в грантовой программе']}"
+                    text += f"\nПримечание: {row['Примечание']}"
+                    if places != "-":
+                        text += '\n---------------------------------------------------------'
+                        text += f"\n❗ Обратите внимание на количество мест. Учитывайте, что не все абитуриенты, находящиеся " \
+                                f"в списке выше вас, предоставили подленник аттестата. \nДля того, чтобы увидеть " \
+                                f"отсортированный список, выберете функцию 'Посмотреть список' или " \
+                                f"перейдите по ссылке: \n{url}"
+                    bot.send_message(message.chat.id, text)
+                    return True
+
+            bot.send_message(message.chat.id, "Кажется, вас нет в этом списке. Проверьте введенный СНИЛС и номер выбранного направления")
+
+
+def check_positio(message):
     if all([x.isdigit() for x in message.text]):
         number = int(message.text)
         count = BotDB.count_of_records(user, message.from_user.id)
@@ -297,8 +353,8 @@ def func(message):
     if (message.text == "/get_snils"):
         bot.send_message(message.chat.id, BotDB.get_snils(user, message.from_user.id))
 
-    elif(message.text == "🪪 Добавить СНИЛС"):
-        bot.send_message(message.chat.id, "Отправьте свой снился в формате: 200-650-900 42")
+    elif(message.text == "🪪 СНИЛС"):
+        bot.send_message(message.chat.id, "Отправьте свой снился в формате: 200-650-900-42")
         bot.register_next_step_handler(message, add_snils)
 
     elif(message.text == "🔗 Добавить ссылку"):
@@ -370,8 +426,8 @@ def func(message):
 
     elif (message.text == "Вернуться в главное меню"):
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        btn1 = types.KeyboardButton("🪪 Добавить СНИЛС")
-        btn2 = types.KeyboardButton("🌐 Полезные ссылки")
+        btn1 = types.KeyboardButton("🪪 СНИЛС")
+        btn2 = types.KeyboardButton("🌐 Ссылки")
         btn3 = types.KeyboardButton("📊 Текущий конкурс")
         btn4 = types.KeyboardButton("📚 Статистика прошлых лет")
         markup.add(btn1, btn2, btn3, btn4)
@@ -403,7 +459,7 @@ def func(message):
         bot.send_message(message.chat.id, "Выберите форму обучения:", reply_markup=markup)
         bot.register_next_step_handler(message, number_request, year)
 
-    elif (message.text == "🌐 Полезные ссылки"):
+    elif (message.text == "🌐 Cсылки"):
         markup = types.InlineKeyboardMarkup()
         button1 = types.InlineKeyboardButton("Официальные документы", url='https://priem.mirea.ru/official')
         button2 = types.InlineKeyboardButton("Гид по специальностям", url='https://priem.mirea.ru/guide?eduLevel=bach-spec&sorting=')
