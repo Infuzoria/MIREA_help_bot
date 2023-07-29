@@ -52,9 +52,4 @@ def parser_contract(url):
             temp_dict[inf] = temp[index]
         main_table.append(temp_dict)
 
-    for i in main_table:
-        print(i)
-
     return main_table
-
-parser_contract("https://priem.mirea.ru/accepted-entrants-list/personal_code_rating.php?competition=1748205368168684854")
